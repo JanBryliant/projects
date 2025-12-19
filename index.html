@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Bryliant | Fullstack Developer</title>
+    <style>
+        :root { --primary: #00d2ff; --secondary: #3a7bd5; --dark: #1a1a1a; --light: #ffffff; }
+        body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--light); margin: 0; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; padding: 60px 0; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 0 0 50px 50px; margin-bottom: 50px; }
+        h1 { font-size: 3rem; margin: 0; letter-spacing: -1px; }
+        .subtitle { font-size: 1.2rem; opacity: 0.9; }
+        
+        h2 { font-size: 2rem; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 15px; margin-top: 40px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+        .card { background: #2a2a2a; padding: 25px; border-radius: 15px; transition: transform 0.3s ease; border: 1px solid #333; }
+        .card:hover { transform: translateY(-10px); border-color: var(--primary); }
+        .card h3 { margin-top: 0; color: var(--primary); }
+        .tag { background: rgba(0, 210, 255, 0.1); color: var(--primary); padding: 4px 10px; border-radius: 5px; font-size: 0.8rem; margin-right: 5px; font-weight: bold; }
+        
+        .contact-btn { display: inline-block; background: var(--primary); color: var(--dark); padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .contact-btn:hover { background: var(--light); transform: scale(1.05); }
+        footer { text-align: center; margin-top: 80px; opacity: 0.5; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jan Bryliant</h1>
+    <p class="subtitle">Software Engineer & Architect</p>
+    <a href="mailto:jan.bryliant@gmail.com" class="contact-btn">Napisz do mnie</a>
+</header>
+
+<div class="container">
+    <section id="projects">
+        <h2>Moje Projekty</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Nexus AI Engine</h3>
+                <p>System automatyzacji procesów biznesowych oparty na mikroserwisach. Skalowalna architektura obsługująca tysiące żądań na sekundę.</p>
+                <div>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Sentinel Guard</h3>
+                <p>Zaawansowany bot bezpieczeństwa dla Telegrama z systemem wykrywania anomalii i integracją z bazą danych PostgreSQL.</p>
+                <div>
+                    <span class="tag">Python</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">AsyncIO</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>CloudStream Dashboard</h3>
+                <p>Panel analityczny czasu rzeczywistego do monitorowania metryk serwerowych. Frontend zbudowany w oparciu o Next.js.</p>
+                <div>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Websockets</span>
+                    <span class="tag">TypeScript</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AutoDeploy CI/CD</h3>
+                <p>Zestaw skryptów i konfiguracji dla automatycznego wdrażania aplikacji w środowiskach chmurowych przy użyciu Jenkins i GitHub Actions.</p>
+                <div>
+                    <span class="tag">Jenkins</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack">
+        <h2>Tech Stack</h2>
+        <p>Specjalizuję się w budowaniu wydajnych systemów backendowych. Wykorzystuję nowoczesne technologie do rozwiązywania złożonych problemów inżynieryjnych.</p>
+        <div style="font-size: 1.1rem;">
+            <code>Python / FastAPI / Django / Docker / PostgreSQL / Redis / Next.js</code>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Jan Bryliant. Kod projektu dostępny na <a href="https://github.com/janbryliant" style="color: var(--primary);">GitHub</a>.
+    </footer>
+</div>
+
+</body>
+</html>
